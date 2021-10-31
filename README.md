@@ -27,7 +27,7 @@ music.txt
 ```
 Then you can write music names that you want to download.
 The resulting text file will look like this:
-![alt text](https://ibb.co/9bwnd3Z)
+![alt text](https://i.ibb.co/X7yXGkY/Ekran-g-r-nt-s-2021-10-31-150157.png)
 
 You can enter as many music names as you like.
 
