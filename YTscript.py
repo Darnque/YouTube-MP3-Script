@@ -10,6 +10,9 @@ filePath += '\\'
 
 f = open("music.txt", "r")
 for i in f:
+    if not i.isascii():
+        print("Error: " + i + " is not ascii!")
+        continue
     data = i.split()
     url = ''
     for j in data:
