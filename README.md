@@ -34,5 +34,8 @@ You can enter as many music names as you like.
 Then run the "YTscript.exe", after it is done you will have a folder named Musics
 which will include all the music files that you have named in your text file.
 
+### Note!
+Please use only English characters or the program will crash with an error!
+
 ## Contact Me
 You can always contact me for your further questions by Discord: Darnque#6354
