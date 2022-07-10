@@ -1,7 +1,7 @@
 import urllib.request
 import re
 import os
-import youtube_dl
+from yt_dlp import YoutubeDL
 
 filePath = os.getcwd()+'\\Musics'
 if not os.path.exists(filePath):
@@ -23,13 +23,19 @@ for i in f:
     videoURL = 'https://www.youtube.com/watch?v='+video_ids[0]
 
     options={
-        'writethumbnail': True,
+        'writethumbnail': False,
         'format':'bestaudio/best',
         'keepvideo':False,
         'outtmpl':filePath+'%(title)s.%(ext)s',
     }
 
-    with youtube_dl.YoutubeDL(options) as ydl:
+    with YoutubeDL(options) as ydl:
         ydl.download([videoURL])
 
 f.close()
+
+for file in os.listdir(filePath):
+    ext = file[file.rfind('.'):]
+
+    if ext != '.webp' or ext != '.jpg':
+        os.rename(filePath+'\\'+file, filePath+'\\'+file[:file.rfind('.')]+'.mp3')

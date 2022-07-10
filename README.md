@@ -1,12 +1,12 @@
 # YouTube MP3 Script
-A script to download your favorite mp3 from YouTube
+A script to download your favorite songs from YouTube in mp3 format.
 
 ## Installation
-Use [pip](https://pypi.org/project/pip/) to install youtube-dl.
+Use [pip](https://pypi.org/project/pip/) to install "yt-dlp".
 ```bash
-pip install youtube-dl
+pip install yt-dlp
 ```
-Then you will need to install ffmpeg.
+Then you will need to install "ffmpeg".
 
 ### For Windows Users
 You need to download the [latest build](https://ffmpeg.org/download.html#build-windows).
